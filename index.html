@@ -535,8 +535,8 @@
               </svg>
             </div>
           </div>
-          <label for="user-comment" class="modal-label">Comment</label>
           <div class="form-comment-container">
+            <label for="user-comment" class="modal-label">Comment</label>
             <textarea
               name="user-comment"
               id="user-comment"
@@ -547,11 +547,13 @@
           <div class="modal-form-checked">
             <input
               type="checkbox"
-              id="policy"
+              name="user-privacy"
+              value="true"
+              id="user-privacy"
               class="form-checkbox visually-hidden"
               required
-            /><label for="policy" class="modal-label checked-label"
-              ><span
+            /><label for="user-privacy" class="modal-label checked-label"
+              ><span class="checkbox-cost"
                 ><svg width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use></svg
               ></span>

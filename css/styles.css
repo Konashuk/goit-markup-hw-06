@@ -863,6 +863,11 @@ body {
   border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   background-color: transparent;
+  outline: transparent;
+}
+
+.form-textarea:focus {
+  border-color: #4d5ae5;
 }
 
 .form-texarea::placeholder {
@@ -887,21 +892,28 @@ body {
 }
 
 .checked-label span {
-  display: flex;
+  fill: transparent;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.checkbox-cost {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-
   width: 16px;
   height: 16px;
   margin-right: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .form-checkbox {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 } */
 
 .form-checkbox:checked + .checked-label span {
@@ -924,12 +936,13 @@ body {
 .submit-btn {
   display: block;
   margin: 0 auto;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   border: none;
   margin-bottom: 24px;
   cursor: pointer;
 
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
