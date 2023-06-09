@@ -623,12 +623,12 @@ body {
   flex-wrap: nowrap; */
 
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   color: #ffffff;
 
-  widows: 264px;
+  width: 264px;
   height: 40px;
   padding: 8px 16px;
 
@@ -675,15 +675,18 @@ body {
   background-color: #404bbf;
 }
 
-.subscribe-btn::after {
+.icon-subscribe {
+  margin-left: 16px;
+}
+
+/* .subscribe-btn::after {
   content: "";
   display: inline-block;
   width: 24px;
   height: 24px;
-  margin-left: 16px;
 
   background-image: url(../images/icon/subscribe.svg);
-}
+} */
 
 /* ======================= MODAL =============  */
 
