@@ -886,11 +886,11 @@ body {
   margin-bottom: 24px;
 }
 
-.checked-label {
+/* .checked-label {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .checked-label span {
   fill: transparent;
